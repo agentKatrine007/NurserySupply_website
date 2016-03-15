@@ -1,5 +1,6 @@
 body {
      margin: 0px auto;
+	 min-width: 1050px;
 }
 
 @font-face {
@@ -338,6 +339,25 @@ body {
     vertical-align: middle;
 }
 
+@media (max-width: 947px )  {
+    #left {
+        margin-left: 5%;
+    }
+
+    #right {
+        margin-right: 5%;
+    }
+
+    #left, #right {
+        color: black;
+    }
+
+    .rectangle {
+
+        margin-top: 5%;
+        opacity: 0.7;
+    }
+}
 @media (max-width:1327px ) {
     #left {
         margin-left: 10%;
@@ -353,10 +373,7 @@ body {
         display: inline-block;
     }
 }
-@media (max-width: 1046px ) {
-
-}
-    @media (max-width: 1046px ) {
+    @media (max-width: 1048px ) and (min-width:948px) {
         #left {
             margin-left: 5%;
         }
@@ -367,22 +384,25 @@ body {
 
         #left, #right {
             color: black;
-            font-family: HelveticaNeueCyr-UltraLight;
-
         }
-        .rectangle{
-            background: #26311c;
+
+        .rectangle {
             width: 920px;
             height: 230px;
             margin: auto;
-            margin-top: 17%;
+            margin-top: 6%;
             opacity: 0.7;
         }
     }
 
-@media(min-width:1280px){
+@media(max-width:1280px) and (min-width:1047px){
     .header {
         min-height: 950px;
+    }
+    .rectangle{
+        width: 920px;
+        height: 230px;
+        margin-top: 8%;
     }
 }
 @media(min-width:1366px){
